@@ -66,7 +66,7 @@ router_abi = json.loads('''
 
 time.sleep(3)
 if not w3.is_connected():
-    print("连接失败")
+    print("Fail to connect")
     exit()
 
 router_abi = [
@@ -327,9 +327,7 @@ def ask_deepseek(prompt):
 def main():
     data = fetch_multi_timeframe_data(symbol)
     prompt = generate_ai_prompt(data, symbol)
-    print(prompt)
     LLMresponse = ask_deepseek(prompt) # return str
-    print(LLMresponse)
     LLMresponse = json.loads(LLMresponse)
     if LLMresponse["交易决策"] == "观望":
         print("Watching and waiting")
