@@ -1,4 +1,4 @@
-```markdown
+
 # LLMCryptocurrency
 
 An automated cryptocurrency trading bot that combines multi-timeframe technical analysis with a large language model (DeepSeek) to execute on-chain swaps on Polygon via QuickSwap.
